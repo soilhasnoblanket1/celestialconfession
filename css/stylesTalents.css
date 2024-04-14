@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #3f3f51;
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 50px; /* Add padding top equal to the height of the nav bar */
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.box {
+  background-color: #2b2b6c;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  width: calc(25% - 40px);
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+.box h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.box p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.button {
+  background-color: #5b3b8c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #7b5bb4;
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    width: 100%;
+  }
+}
+
+.submit-talent-section {
+  background-color: #3f3f51;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.submit-talent-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.submit-talent-section p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.submit-talent-button {
+  background-color: #5b3b8c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-talent-button:hover {
+  background-color: #7b5bb4;
+}

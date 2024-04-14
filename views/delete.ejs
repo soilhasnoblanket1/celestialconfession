@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Confession</title>
+<link rel="stylesheet" type="text/css" href="stylesDelete.css">
+<link rel="stylesheet" type="text/css" href="/navbar.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/feed">Confessions</a>
+    <a href="/talents">Talents</a>
+    <a href="/deleteconfession">Delete Confession</a>
+</nav>
+
+<div class="container">
+  <div class="title">
+    Delete Your Confession
+  </div>
+  <form action="/api/deleteconf" method="post" id="deleteForm">
+    <p color= "white">Enter Confession code to delete your confession:</p><br> <br>
+    <input type="text" id="objectId" name="objectId" class="form-input"><br>
+    <button type="submit" class="delete-button">Delete Confession</button>
+  </form>
+</div>
+</body>
+</html>

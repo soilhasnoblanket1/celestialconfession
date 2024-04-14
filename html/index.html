@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Confessions</title>
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+<link rel="stylesheet" type="text/css" href="stylesIndex.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/feed">Confessions</a>
+        <a href="/talents">Talents</a>
+        <a href="/deleteconfession">Delete Confession</a>
+    </nav>
+
+    <div class="container">
+        <form action="/api/submit" method="post" 
+        <h1>Submit Your Confession</h1>
+        <label for="confession">Confession (Max 500 characters):</label>
+        <textarea id="confession" name="confession" rows="4" cols="50" maxlength="500" required oninput="updateCharacterCount()"></textarea>
+        <div id="characterCount">Characters remaining: 500</div>
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function updateCharacterCount() {
+            const textArea = document.getElementById('confession');
+            const maxLength = 500;
+            const remaining = maxLength - textArea.value.length;
+            document.getElementById('characterCount').textContent = `Characters remaining: ${remaining}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+}
+
+h1 {
+  color: #4a00e0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.confession-card {
+  background-color: #f0f0f0;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  word-wrap: break-word; /* Add this property to handle text overflow */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.confession-card:hover {
+  background-color: #e0e0e0;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.time-ago {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

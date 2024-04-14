@@ -1,0 +1,89 @@
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  text-align: center;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 20px;
+  font-size: 14px; /* Add font-size */
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px; /* Add font-size */
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow */
+}
+
+.object-code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  color: white;
+  background-color: #585554;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow:
+    0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 3px 10px 0 rgba(0, 0, 0, 0.19); /* Add box shadow */
+}
+
+.confession-box {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  overflow-wrap: break-word;
+  box-shadow:
+    0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 3px 10px 0 rgba(0, 0, 0, 0.19); /* Add box shadow */
+  font-size: 14px; /* Add font-size */
+}
+
+.copy-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow:
+    0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 3px 10px 0 rgba(0, 0, 0, 0.19); /* Add box shadow */
+  font-size: 14px; /* Add font-size */
+}
+
+.mainpage {
+  background-color: #11ff00;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow:
+    0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 3px 10px 0 rgba(0, 0, 0, 0.19); /* Add box shadow */
+  font-size: 14px; /* Add font-size */
+}
+
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+  font-size: 14px; /* Add font-size */
+}
